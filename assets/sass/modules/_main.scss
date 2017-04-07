@@ -1,0 +1,232 @@
+
+main{
+
+  .first{
+    height: 100vh;
+    min-height: 768px;
+    padding: 0 20px;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center center;
+
+    .center{
+      display: flex;
+      position: relative;
+      top: 50%;
+      flex-direction: column;
+      align-items: center;
+      transform: translateY(-50%);
+
+      .logo{
+        display: block;
+        padding: 15px 26px 11px 26px;
+        box-sizing: border-box;
+        border: 2px solid #6185a8;
+        background: rgba(80, 117, 140, .7);
+        margin-bottom: 75px;
+      }
+
+      .title{
+        width: 100%;
+        text-align: center;
+        font-family: ProximaNova-Light;
+        font-size: 40px;
+        color: white;
+        margin-bottom: 100px;
+
+        span{
+          font-family: ProximaNova-Bold;
+        }
+      }
+
+      .registration-block{
+        height: 400px;
+        min-width: 625px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        background: rgba(65, 64, 78, .7);
+        padding: 27px 26px 67px 26px;
+        box-sizing: border-box;
+
+        .description{
+          width: 283px;
+          font-family: ProximaNova-Light;
+          font-size: 20px;
+          color: white;
+          margin-right: 15px;
+
+          .description-title{
+            font-family: ProximaNova-Bold;
+            margin-bottom: 20px;
+            font-size: 25px;
+            color: $orange;
+          }
+
+          p{
+            color: #d0d0d3;
+            line-height: 22px;
+            margin-bottom: 25px;
+          }
+
+          span{
+            color: white;
+            font-family: ProximaNova-Bold;
+          }
+
+          .description-title{
+            font-family: ProximaNova-Bold;
+            font-size: 25px;
+            color: $orange;
+          }
+        }
+
+        .journal{
+          margin-right: 30px;
+          margin-top: -50px;
+
+          img{
+            display: block;
+          }
+        }
+
+        form{
+          width: 245px;
+
+          .form-title{
+            font-family: ProximaNova-Bold;
+            margin-bottom: 20px;
+            text-align: right;
+            font-size: 25px;
+            color: $orange;
+          }
+
+          label{
+            display: inline-block;
+            font-family: ProximaNova-Light;
+            font-size: 20px;
+            color: white;
+            margin-bottom: 11px;
+          }
+
+          input{
+            width: 100%;
+            height: 46px;
+            padding: 0 8px;
+            border: 1px solid #e5e5e5;
+            box-sizing: border-box;
+            border-radius: 3px;
+            background: white;
+            margin-bottom: 25px;
+
+            &::placeholder{
+              font-family: ProximaNova-Regular;
+              font-size: 16px;
+              color: #a9a9ac;
+            }
+          }
+
+          button{
+            width:100%;
+            font-family: ProximaNova-Bold;
+            font-size: 18px;
+            display: inline-block;
+            text-transform: uppercase;
+            border-radius: 3px;
+            color: white;
+            padding: 16px 0;
+            background: $orange;
+            transition: background .3s;
+            cursor: pointer;
+            transition: background .3s;
+
+            &:hover{
+              transition: background .3s;
+              background: darken($orange, 7%);
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .content{
+    position: relative;
+    padding: 56px 0;
+
+    .content-wr{
+      width: 920px;
+      margin: auto;
+
+      .content-title{
+        font-family: ProximaNova-Light;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 40px;
+        color: #225582;
+
+        span{
+          font-family: ProximaNova-Bold;
+          font-weight: 600;
+        }
+      }
+
+      .columns{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        .column{
+          width: 287px;
+          color: #225582;
+          font-family: ProximaNova-Light;
+          font-size: 20px;
+          line-height: 21px;
+
+          .column-title{
+            margin-bottom: 25px;
+            font-family: ProximaNova-Bold;
+            font-size: 30px;
+            color: $orange;
+          }
+        }
+
+        .column:nth-child(2){
+          text-align: center;
+        }
+
+        .column:nth-child(3){
+          text-align: right;
+        }
+
+      }
+    }
+
+    .button{
+      width: 400px;
+      font-family: ProximaNova-Bold;
+      font-size: 24px;
+      display: inline-block;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 3px;
+      color: white;
+      padding: 22px 0;
+      background: $orange;
+      transition: background .3s;
+      cursor: pointer;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 50%);
+
+      &:hover{
+        transition: background .3s;
+        background: darken($orange, 7%);
+      }
+    }
+  }
+
+}

@@ -1,0 +1,52 @@
+@media only screen and (max-width: 1024px){
+
+    .center{
+
+        .registration-block{
+            width: 70vw !important;
+            height: auto !important;
+
+            .journal{
+                display: none;
+            }
+        }
+    }
+
+    .content{
+        padding-bottom: 75px;
+
+        .content-wr{
+            width: auto;
+
+            .column-title{
+                text-align: center;
+            }
+            .columns{
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 0;
+
+                .column{
+                    text-align: center !important;
+                    margin-bottom: 60px;
+
+                    &:last-child{
+                        margin-bottom: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        padding-bottom: 37px;
+
+        .footer-wr{
+            .question{
+                margin-bottom: 37px;
+            }
+        }
+
+    }
+
+}
