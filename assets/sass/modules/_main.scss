@@ -156,7 +156,7 @@ main{
     padding: 56px 0;
 
     .content-wr{
-      width: 920px;
+      max-width: 920px;
       margin: auto;
 
       .content-title{
@@ -208,12 +208,13 @@ main{
       width: 400px;
       font-family: ProximaNova-Bold;
       font-size: 24px;
-      display: inline-block;
+      display: inline-table;
       text-align: center;
       text-transform: uppercase;
       border-radius: 3px;
       color: white;
       padding: 22px 0;
+      box-sizing: border-box;
       background: $orange;
       transition: background .3s;
       cursor: pointer;
